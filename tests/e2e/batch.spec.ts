@@ -23,8 +23,14 @@ test('E20: анализ пакета запускается только кно�
 });
 
 test('E21: прямая ссылка на оригинал есть в карточке и разборе',async({page})=>{
- await page.goto('/select-company');const me=await (await page.request.get('/api/v1/me')).json();const headers={'X-CSRF-Token':me.csrf_token};
- const r=await (await page.request.post('/api/v1/companies/U_9250/runs',{headers,data:{role:'ceo',mode:'fixture'}})).json();
+ await page.goto('/select-company');
+ await expect(page.getByRole('heading',{name:'Альфа Контекст',exact:true})).toBeVisible();
+ const meResponse=await page.request.get('/api/v1/me');
+ expect(meResponse.status(),await meResponse.text()).toBe(200);
+ const me=await meResponse.json();const headers={'X-CSRF-Token':me.csrf_token};
+ const response=await page.request.post('/api/v1/companies/U_9250/runs',{headers,data:{role:'ceo',mode:'fixture'}});
+ expect(response.status(),await response.text()).toBe(202);
+ const r=await response.json();expect(r.run_id).toBeTruthy();
  await expect.poll(async()=>(await (await page.request.get('/api/v1/runs/'+r.run_id)).json()).status).toMatch(/^completed/);
  const overview=await (await page.request.get('/api/v1/companies/U_9250/overview?role=ceo')).json();
  const item=overview.items[0];const url='https://lenta.ru/news/2026/10/26/synthetic-link-test/';
@@ -41,8 +47,14 @@ test('E21: прямая ссылка на оригинал есть в карт�
 });
 
 test('E22: в карточке и разборе нет технического имени модели',async({page})=>{
- await page.goto('/select-company');const me=await (await page.request.get('/api/v1/me')).json();const headers={'X-CSRF-Token':me.csrf_token};
- const run=await (await page.request.post('/api/v1/companies/U_9250/runs',{headers,data:{role:'ceo',mode:'fixture'}})).json();
+ await page.goto('/select-company');
+ await expect(page.getByRole('heading',{name:'Альфа Контекст',exact:true})).toBeVisible();
+ const meResponse=await page.request.get('/api/v1/me');
+ expect(meResponse.status(),await meResponse.text()).toBe(200);
+ const me=await meResponse.json();const headers={'X-CSRF-Token':me.csrf_token};
+ const response=await page.request.post('/api/v1/companies/U_9250/runs',{headers,data:{role:'ceo',mode:'fixture'}});
+ expect(response.status(),await response.text()).toBe(202);
+ const run=await response.json();expect(run.run_id).toBeTruthy();
  await expect.poll(async()=>(await (await page.request.get('/api/v1/runs/'+run.run_id)).json()).status).toMatch(/^completed/);
  const overview=await (await page.request.get('/api/v1/companies/U_9250/overview?role=ceo')).json();const item=overview.items[0];
  item.analysis_method='Gemma 4 · пакетный запрос';
