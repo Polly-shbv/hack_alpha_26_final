@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-25",
+  "build": "1.1.0",
+  "source_sha256": "1867a0f528fbbcfb564b737769ab602d940efdc2d3d22a883002f290f3c22798",
+  "status": "passed",
+  "local_application_restart": "passed",
+  "source_copy_matches_workspace": true,
+  "checks": {
+    "compileall": "passed",
+    "backend_pytest": {
+      "passed": 84,
+      "seconds": 3.62,
+      "upstream_deprecation_warnings": 6
+    },
+    "frontend_unit": {
+      "passed": 9
+    },
+    "browser_e2e": {
+      "passed": 16,
+      "seconds": 51.5
+    },
+    "typescript": "passed",
+    "production_build": {
+      "passed": true,
+      "seconds": 1.18
+    },
+    "axe_serious_critical": 0,
+    "accepted_S01_baseline": "passed"
+  },
+  "corpus": {
+    "documents": 9,
+    "pages": 64,
+    "ocr_characters": 155653,
+    "publication_date_unknown": 1,
+    "historical_2021_document": 1,
+    "fully_manually_proofread": false
+  },
+  "real_RSS": {
+    "feed": "https://www.cbr.ru/rss/RssPress",
+    "entries_parsed": 14,
+    "full_articles_collected_and_analyzed": 1,
+    "LLM_cost_rub": "0"
+  },
+  "paid_model_calls": 0,
+  "not_run": [
+    "real allowed LLM API",
+    "commercial interpretation quality assessment",
+    "Docker runtime",
+    "Windows/Linux runtime",
+    "public hosting"
+  ],
+  "earlier_findings": [
+    "Native OCR needed CPU mode and access to macOS system services; all 64 pages then recognized locally",
+    "The bundled Python default CA lookup failed on the live source; certifi and a separate TLS error were added, HTTPS feed then passed",
+    "Visual review found a general debt report outranking the specific policy-rate report; title/recency ranking and document diversity fixed it, with a new regression test and an E2E assertion"
+  ],
+  "deployment_verified_on": "2026-10-26"
+}

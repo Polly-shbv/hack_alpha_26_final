@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-26",
+  "standalone_connection_generations": 1,
+  "development_batches": [
+    {
+      "id": "batch-6d1d088e1a7b4da4",
+      "status": "completed_with_limits",
+      "model_calls": 1,
+      "pairs": 9,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": [
+        {
+          "code": "FREE_RATE_LIMIT",
+          "message": "Бесплатная модель временно ограничила частоту запросов"
+        }
+      ]
+    },
+    {
+      "id": "batch-1992473a89204d0f",
+      "status": "completed_with_limits",
+      "model_calls": 1,
+      "pairs": 9,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "errors": [
+        {
+          "code": "LLM_TIMEOUT",
+          "message": "Источник отвечает слишком долго"
+        }
+      ]
+    },
+    {
+      "id": "batch-432f54bca84b4b8e",
+      "status": "completed_with_limits",
+      "model_calls": 1,
+      "pairs": 9,
+      "tokens_in": 10346,
+      "tokens_out": 4828,
+      "errors": [
+        {
+          "company_id": "U_9250",
+          "event_id": "event-doc-3cb911d48f804d2d",
+          "code": "INVALID_RATIONALE",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_9250",
+          "event_id": "event-doc-2d1ee7cffc184446",
+          "code": "INVALID_RATIONALE",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_9250",
+          "event_id": "event-doc-f2d8397723a940e9",
+          "code": "INVALID_RATIONALE",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_1941",
+          "event_id": "event-doc-2d96b1d8a9884eee",
+          "code": "INVALID_RATIONALE",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_1941",
+          "event_id": "event-doc-ee97d5b8e5f14504",
+          "code": "FOREIGN_EVIDENCE",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_1941",
+          "event_id": "event-doc-a0d8ba8f8b9f4b72",
+          "code": "INVALID_RATIONALE",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_106783",
+          "event_id": "event-doc-f2d8397723a940e9",
+          "code": "INVALID_RATIONALE",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_106783",
+          "event_id": "event-doc-321629c278704924",
+          "code": "FOREIGN_EVIDENCE",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_106783",
+          "event_id": "event-doc-2d96b1d8a9884eee",
+          "code": "INVALID_RATIONALE",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        }
+      ]
+    },
+    {
+      "id": "batch-82d71c85dda54071",
+      "status": "completed_with_limits",
+      "model_calls": 1,
+      "pairs": 9,
+      "tokens_in": 10465,
+      "tokens_out": 5004,
+      "errors": [
+        {
+          "company_id": "U_1941",
+          "event_id": "event-doc-2d96b1d8a9884eee",
+          "code": "UNSUPPORTED_CLAIM",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_1941",
+          "event_id": "event-doc-a0d8ba8f8b9f4b72",
+          "code": "UNSUPPORTED_CLAIM",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_106783",
+          "event_id": "event-doc-2d96b1d8a9884eee",
+          "code": "UNSUPPORTED_CLAIM",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        }
+      ]
+    },
+    {
+      "id": "batch-e65246fab6504769",
+      "status": "completed",
+      "model_calls": 1,
+      "pairs": 6,
+      "tokens_in": 8024,
+      "tokens_out": 2775,
+      "errors": []
+    },
+    {
+      "id": "batch-16132eab487a42e3",
+      "status": "completed_with_limits",
+      "model_calls": 1,
+      "pairs": 6,
+      "tokens_in": 7520,
+      "tokens_out": 3355,
+      "errors": [
+        {
+          "company_id": "U_9250",
+          "event_id": "event-doc-321629c278704924",
+          "code": "UNVERIFIED_BANK",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_1941",
+          "event_id": "event-doc-11947f1df56e4970",
+          "code": "UNVERIFIED_BANK",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        }
+      ]
+    }
+  ],
+  "root_recorded_requests_including_prior_openrouter": 7,
+  "automatic_retries": 0,
+  "paid_fallbacks": 0
+}

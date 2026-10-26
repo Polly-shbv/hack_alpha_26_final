@@ -1,0 +1,17 @@
+{
+  "model": "google/gemma-4-26b-a4b-it:free",
+  "free_only": true,
+  "base_url": "https://openrouter.ai/api/v1",
+  "status": "failed",
+  "error": {
+    "code": "FREE_RATE_LIMIT",
+    "message": "Бесплатная модель временно ограничила частоту запросов"
+  },
+  "date": "2026-10-26",
+  "key_authentication_status": 200,
+  "generation_attempts": 2,
+  "successful_generations": 0,
+  "external_company_context_sent": false,
+  "company_context_test": "blocked_by_automatic_approval_review",
+  "paid_fallback": false
+}

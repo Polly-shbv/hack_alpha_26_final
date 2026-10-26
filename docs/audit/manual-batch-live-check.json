@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-26",
+  "build": "1.3.0",
+  "consent": "explicit user authorization in chat",
+  "maximum_generation_requests": 1,
+  "batch_id": "batch-17a0ddf64dc74696",
+  "status": "completed_with_limits",
+  "company_count": 3,
+  "news_count": 7,
+  "task_count": 9,
+  "model_calls": 1,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "cost_rub": "0",
+  "errors": [
+    {
+      "code": "FREE_RATE_LIMIT",
+      "message": "Бесплатная модель временно ограничила частоту запросов"
+    }
+  ],
+  "methods": {
+    "Локальные правила": 9
+  },
+  "original_urls": [
+    "https://tass.ru/nedvizhimost/28252105",
+    "https://lenta.ru/news/2026/10/25/rossiyanam-rasskazali-ob-oformlenii-zemli-za-predelami-uchastka/",
+    "https://lenta.ru/news/2026/10/26/ekoterroristy-atakovali-neftyanuyu-platformu-golubyami-biodronami-so-vzryvchatkoy/",
+    "https://ria.ru/20261026/kitay-2126953286.html",
+    "https://ria.ru/20261026/ukraina-2126952644.html",
+    "https://lenta.ru/news/2026/10/26/zaharova-poblagodarila-kitay-za-berezhnoe-otnoshenie-k-mogilam-voinov/",
+    "https://lenta.ru/news/2026/10/25/diesel-is-good/"
+  ]
+}

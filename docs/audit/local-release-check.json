@@ -1,0 +1,75 @@
+{
+  "verified_on": "2026-10-26",
+  "status": "passed",
+  "app_url": "http://127.0.0.1:5173/select-company",
+  "reference_documents": 9,
+  "roles_and_companies_ready": [
+    {
+      "company": "U_9250",
+      "role": "ceo",
+      "run_id": "run-cec386c1890842e3",
+      "status": "completed_with_limits",
+      "bank_claims": 7
+    },
+    {
+      "company": "U_9250",
+      "role": "cfo",
+      "run_id": "run-bcd3920e47004f4d",
+      "status": "completed_with_limits",
+      "bank_claims": 7
+    },
+    {
+      "company": "U_9250",
+      "role": "treasury",
+      "run_id": "run-1603e36316434122",
+      "status": "completed_with_limits",
+      "bank_claims": 7
+    },
+    {
+      "company": "U_1941",
+      "role": "ceo",
+      "run_id": "run-a76a51e0cd42448c",
+      "status": "completed_with_limits",
+      "bank_claims": 7
+    },
+    {
+      "company": "U_1941",
+      "role": "cfo",
+      "run_id": "run-701b56151b5c4703",
+      "status": "completed_with_limits",
+      "bank_claims": 7
+    },
+    {
+      "company": "U_1941",
+      "role": "treasury",
+      "run_id": "run-bd575e6675614ae4",
+      "status": "completed_with_limits",
+      "bank_claims": 7
+    },
+    {
+      "company": "U_106783",
+      "role": "ceo",
+      "run_id": "run-926ab7d027dd4bbb",
+      "status": "completed_with_limits",
+      "bank_claims": 7
+    },
+    {
+      "company": "U_106783",
+      "role": "cfo",
+      "run_id": "run-d12ee244a75e4c79",
+      "status": "completed_with_limits",
+      "bank_claims": 7
+    },
+    {
+      "company": "U_106783",
+      "role": "treasury",
+      "run_id": "run-5bb1268537d54918",
+      "status": "completed_with_limits",
+      "bank_claims": 7
+    }
+  ],
+  "model_api_ready": false,
+  "analysis_mode": "fixture",
+  "paid_calls_in_this_verification": 0,
+  "existing_history_preserved": true
+}

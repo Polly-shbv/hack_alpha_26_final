@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-26",
+  "build": "1.3.0",
+  "source_sha256": "a9853a917df688e928e2363ae458db6646b125993d0fd7c4227336b301db57b1",
+  "status": "passed",
+  "checks": {
+    "backend_pytest": {
+      "passed": 127,
+      "seconds": 5.83
+    },
+    "frontend_unit": {
+      "passed": 9
+    },
+    "browser_e2e": {
+      "passed": 20
+    },
+    "compileall": "passed",
+    "typescript": "passed",
+    "production_build": {
+      "passed": true,
+      "seconds": 1.29
+    },
+    "axe_serious_critical": 0,
+    "accepted_S01_baselines": "passed"
+  },
+  "manual_only": true,
+  "automatic_model_retries": 0,
+  "max_companies": 3,
+  "max_pairs": 9,
+  "max_generation_posts_per_batch": 1,
+  "verified_transport_behaviors": [
+    "three companies and nine pairs use one POST",
+    "unchanged packet uses cache with zero POSTs",
+    "invalid or missing parts use local rules without repair POST",
+    "429 produces one POST and no scheduled retries",
+    "concurrent clicks reuse in-flight batch",
+    "connection check uses GET metadata only",
+    "original article URL survives insight, UI and export",
+    "storage-mode migration preserves article revision tracking"
+  ],
+  "external_company_context_permission": "explicit user consent received 2026-10-26",
+  "network_in_pytest": "blocked; model uses mock transports",
+  "not_run": [
+    "Docker runtime",
+    "Windows/Linux runtime",
+    "public hosting"
+  ]
+}

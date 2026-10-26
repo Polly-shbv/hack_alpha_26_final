@@ -1,0 +1,10 @@
+{
+  "unique_companies": 85514,
+  "large_over_15bn": 115,
+  "large_bank_clients": 102,
+  "large_wholesale": 62,
+  "large_credit_flag": 49,
+  "large_fts_flag": 57,
+  "large_incoming_and_outgoing": 105,
+  "method": "First unique company row; conflicted duplicate rows excluded and reported; self-payments excluded"
+}

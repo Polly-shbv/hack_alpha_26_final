@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+. scripts/env.sh
+exec docker compose up --build "$@"

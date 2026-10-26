@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-25",
+  "status": "passed",
+  "documents": 9,
+  "pages": 64,
+  "characters": 155653,
+  "publication_date_unknown": 1,
+  "items": [
+    {
+      "file": "ALFA_Russian_Steels_1К21PreviewUpdate_15Apr2021.pdf",
+      "pages": 4,
+      "characters": 14807,
+      "ocr_elapsed_ms": 3552,
+      "original_checksum_ok": true,
+      "ocr_checksum_ok": true,
+      "published_at": "2021-04-15T23:59:59+03:00"
+    },
+    {
+      "file": "ALFA-7M26.pdf",
+      "pages": 4,
+      "characters": 12123,
+      "ocr_elapsed_ms": 2009,
+      "original_checksum_ok": true,
+      "ocr_checksum_ok": true,
+      "published_at": "2026-09-07T23:59:59+03:00"
+    },
+    {
+      "file": "ALFA-consumption.pdf",
+      "pages": 4,
+      "characters": 12726,
+      "ocr_elapsed_ms": 2128,
+      "original_checksum_ok": true,
+      "ocr_checksum_ok": true,
+      "published_at": "2026-08-05T23:59:59+03:00"
+    },
+    {
+      "file": "ALFA-Macro_Insights-Policy_Rate_11Sep.pdf",
+      "pages": 4,
+      "characters": 11823,
+      "ocr_elapsed_ms": 2094,
+      "original_checksum_ok": true,
+      "ocr_checksum_ok": true,
+      "published_at": "2026-09-11T23:59:59+03:00"
+    },
+    {
+      "file": "ALFA-macro_stat1H26.pdf",
+      "pages": 5,
+      "characters": 17373,
+      "ocr_elapsed_ms": 3910,
+      "original_checksum_ok": true,
+      "ocr_checksum_ok": true,
+      "published_at": "2026-07-31T23:59:59+03:00"
+    },
+    {
+      "file": "FI_Strategy_3Q26_22072026.pdf",
+      "pages": 27,
+      "characters": 52268,
+      "ocr_elapsed_ms": 11624,
+      "original_checksum_ok": true,
+      "ocr_checksum_ok": true,
+      "published_at": "2026-07-22T23:59:59+03:00"
+    },
+    {
+      "file": "Gold_digest_August26.pdf",
+      "pages": 8,
+      "characters": 14513,
+      "ocr_elapsed_ms": 4624,
+      "original_checksum_ok": true,
+      "ocr_checksum_ok": true,
+      "published_at": null
+    },
+    {
+      "file": "Inflation_tracker_02.pdf",
+      "pages": 3,
+      "characters": 7941,
+      "ocr_elapsed_ms": 2078,
+      "original_checksum_ok": true,
+      "ocr_checksum_ok": true,
+      "published_at": "2026-09-02T23:59:59+03:00"
+    },
+    {
+      "file": "Бонд_Бриф_14092026.pdf",
+      "pages": 5,
+      "characters": 12079,
+      "ocr_elapsed_ms": 2285,
+      "original_checksum_ok": true,
+      "ocr_checksum_ok": true,
+      "published_at": "2026-09-14T23:59:59+03:00"
+    }
+  ],
+  "ocr_text_fully_reviewed": false
+}

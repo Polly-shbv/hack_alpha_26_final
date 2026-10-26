@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-26",
+  "build": "1.2.0",
+  "source_sha256": "1c976067467e5725aacdf3b50ae461ae8879bb46aaf0cdb7e2ff5260f91d3488",
+  "status": "passed_with_external_limitations",
+  "checks": {
+    "backend_pytest": {
+      "passed": 113,
+      "seconds": 5.03
+    },
+    "frontend_unit": {
+      "passed": 9
+    },
+    "browser_e2e": {
+      "passed": 18,
+      "seconds": 58.8
+    },
+    "compileall": "passed",
+    "typescript": "passed",
+    "production_build": {
+      "passed": true,
+      "seconds": 1.19
+    },
+    "axe_serious_critical": 0,
+    "accepted_S01_baselines": "passed",
+    "publisher_HTML_fixtures": 3,
+    "free_model_calls_in_automated_tests": 0
+  },
+  "real_source_checks": {
+    "initial_articles": 14,
+    "final_articles": 15,
+    "full_article_publishers": [
+      "Лента.ру",
+      "РИА Новости"
+    ],
+    "tass": "RSS excerpts; article pages blocked",
+    "local_company_insights": {
+      "U_9250": 7,
+      "U_1941": 4,
+      "U_106783": 5
+    }
+  },
+  "model": {
+    "id": "google/gemma-4-26b-a4b-it:free",
+    "base_url": "https://openrouter.ai/api/v1",
+    "catalog_zero_prices": "confirmed",
+    "key_authorization_status": 200,
+    "generation_status": "429 rate limit",
+    "generation_attempts": 2,
+    "successful_real_generations": 0,
+    "paid_fallback": false,
+    "company_context_sent": false,
+    "company_context_permission_default": false,
+    "company_context_live_test": "blocked by automatic approval review; requires explicit consent"
+  },
+  "earlier_findings_fixed": [
+    "Default classification no-bank was incorrectly treated as a business topic in collection priority; corrected",
+    "Repeated E19 reused an intentionally disabled test source; unique synthetic content added and the complete 18-test browser suite passed"
+  ],
+  "not_run": [
+    "real model interpretation of actual company profiles",
+    "real remote bank PDF watch (no bank watch URL provided)",
+    "Docker runtime",
+    "Windows/Linux runtime",
+    "public deployment"
+  ]
+}

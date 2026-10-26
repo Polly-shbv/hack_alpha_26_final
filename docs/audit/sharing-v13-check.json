@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-26",
+  "build": "1.3.0",
+  "status": "passed",
+  "files": 79,
+  "bytes": 1551563,
+  "sha256": "3742341b24af421c93fc4fc9f0646f3db4606a8eb557019d937f93a09617e194",
+  "source_sha256": "a9853a917df688e928e2363ae458db6646b125993d0fd7c4227336b301db57b1",
+  "fresh_directory_startup": "passed",
+  "three_company_local_scenarios": "passed",
+  "key_in_archive": false,
+  "automatic_refresh": false,
+  "not_run": [
+    "Windows/Linux",
+    "repeat fresh pip installation (lock unchanged)"
+  ]
+}

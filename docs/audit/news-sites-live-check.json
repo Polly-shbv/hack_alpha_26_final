@@ -1,0 +1,153 @@
+{
+  "id": "collect-173db652b0494706",
+  "status": "partial",
+  "started_at": "2026-10-25T22:14:19.183268+00:00",
+  "ended_at": "2026-10-25T22:14:24.601638+00:00",
+  "payload": {
+    "trigger": "manual",
+    "owner": "demo",
+    "sources": [
+      {
+        "id": "lenta",
+        "name": "Лента.ру",
+        "found": 99,
+        "processed": 5,
+        "changed": 5,
+        "status": "completed",
+        "items": [
+          {
+            "url": "https://lenta.ru/news/2026/10/26/v-rossii-startovala-monetnaya-nedelya/",
+            "id": "doc-3b1a107ee76445ea",
+            "status": "new",
+            "version": 1,
+            "content_extent": "full_article"
+          },
+          {
+            "url": "https://lenta.ru/news/2026/10/25/rossiyanam-rasskazali-ob-oformlenii-zemli-za-predelami-uchastka/",
+            "id": "doc-c6bd31da39c34b5c",
+            "status": "new",
+            "version": 1,
+            "content_extent": "full_article"
+          },
+          {
+            "url": "https://lenta.ru/news/2026/10/25/rossiyanam-rasskazali-o-poluchenii-medpomoschi-bez-registratsii/",
+            "id": "doc-cb7bb24d9f984158",
+            "status": "new",
+            "version": 1,
+            "content_extent": "full_article"
+          },
+          {
+            "url": "https://lenta.ru/news/2026/10/25/diesel-is-good/",
+            "id": "doc-d70de63c09f746a2",
+            "status": "new",
+            "version": 1,
+            "content_extent": "full_article"
+          },
+          {
+            "url": "https://lenta.ru/news/2026/10/26/real-pobedil-barselonu-v-matche-la-ligi/",
+            "id": "doc-e4e7d5e7d17e4daa",
+            "status": "new",
+            "version": 1,
+            "content_extent": "full_article"
+          }
+        ],
+        "elapsed_ms": 2006
+      },
+      {
+        "id": "ria",
+        "name": "РИА Новости",
+        "found": 100,
+        "processed": 5,
+        "changed": 5,
+        "status": "completed",
+        "items": [
+          {
+            "url": "https://ria.ru/20261026/znak-2126951731.html",
+            "id": "doc-0384374d1aea4d05",
+            "status": "new",
+            "version": 1,
+            "content_extent": "full_article"
+          },
+          {
+            "url": "https://ria.ru/20261026/ukraina-2126951584.html",
+            "id": "doc-954f1b954c614537",
+            "status": "new",
+            "version": 1,
+            "content_extent": "full_article"
+          },
+          {
+            "url": "https://ria.ru/20261026/barselona-2126951444.html",
+            "id": "doc-d3859baf8b3348b5",
+            "status": "new",
+            "version": 1,
+            "content_extent": "full_article"
+          },
+          {
+            "url": "https://ria.ru/20261026/vybory-2126951243.html",
+            "id": "doc-96de0b0f260e4160",
+            "status": "new",
+            "version": 1,
+            "content_extent": "full_article"
+          },
+          {
+            "url": "https://ria.ru/20261026/ukraina-2126950907.html",
+            "id": "doc-848590eb228542e3",
+            "status": "new",
+            "version": 1,
+            "content_extent": "full_article"
+          }
+        ],
+        "elapsed_ms": 2107
+      },
+      {
+        "id": "tass",
+        "name": "ТАСС",
+        "found": 100,
+        "processed": 4,
+        "changed": 4,
+        "status": "partial",
+        "items": [
+          {
+            "url": "https://tass.ru/nedvizhimost/28252105",
+            "status": "failed",
+            "error": {
+              "code": "SOURCE_UNAVAILABLE",
+              "message": "Не удалось загрузить материал. Проверьте ссылку или добавьте файл"
+            }
+          },
+          {
+            "url": "https://tass.ru/ekonomika/28252087",
+            "id": "doc-3982165bbc4e4bfe",
+            "status": "new",
+            "version": 1,
+            "content_extent": "feed_excerpt"
+          },
+          {
+            "url": "https://tass.ru/ekonomika/28252075",
+            "id": "doc-a6aea868a3ed49ac",
+            "status": "new",
+            "version": 1,
+            "content_extent": "feed_excerpt"
+          },
+          {
+            "url": "https://tass.ru/ekonomika/28252065",
+            "id": "doc-a782e6a94d4e4b21",
+            "status": "new",
+            "version": 1,
+            "content_extent": "feed_excerpt"
+          },
+          {
+            "url": "https://tass.ru/ekonomika/28252039",
+            "id": "doc-b1f22ce16de54cbf",
+            "status": "new",
+            "version": 1,
+            "content_extent": "feed_excerpt"
+          }
+        ],
+        "elapsed_ms": 1022
+      }
+    ],
+    "changed": 23,
+    "mode": "live"
+  }
+}

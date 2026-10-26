@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-26",
+  "backup": "/Users/polinasibaeva/Documents/хакатон альфа/alfa backend/data/local/backups/alfa-before-1.2-20261026.sqlite3",
+  "before": {
+    "companies": 3,
+    "runs": 66,
+    "insights": 396,
+    "saved": 0
+  },
+  "source_files_match": 64,
+  "external_company_context_enabled": false,
+  "api_status": 200,
+  "auto_refresh": true,
+  "mode": "fixture",
+  "collection_status": "partial",
+  "collected_articles": 15,
+  "worker_status": "running",
+  "original_history_preserved": true,
+  "company_profiles_unchanged": true,
+  "model_requests_sent": 0,
+  "after": {
+    "companies": 3,
+    "runs": 69,
+    "insights": 414,
+    "saved": 0
+  }
+}

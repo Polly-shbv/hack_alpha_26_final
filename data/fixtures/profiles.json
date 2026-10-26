@@ -1,0 +1,549 @@
+[
+  {
+    "id": "U_1941",
+    "industry": "Оптовая торговля",
+    "okved": "46.49",
+    "okved_name": "Торговля оптовая прочими бытовыми товарами",
+    "revenue_decimal": "24107304489.0",
+    "region": "Москва",
+    "city": "г. Москва",
+    "group_id": "group_133806_sb",
+    "countries": [
+      "Китай",
+      "Египет",
+      "Турция"
+    ],
+    "products": {
+      "credit": true,
+      "leasing": true,
+      "rko": true,
+      "guarantee": false,
+      "deposit": false,
+      "salary": true,
+      "factoring": false
+    },
+    "provenance": "source_csv",
+    "imported_at": "2026-10-24T15:47:38.116394+00:00",
+    "source": "df_Uid_data_hack.csv",
+    "raw": {
+      "SYNTHETIC_U": "U_1941",
+      "ORG_TYPE": "КОММ_ОРГ",
+      "OKFS_NAME": "ЧАСТНАЯ СОБСТВЕННОСТЬ",
+      "COMPANY_AGE_YEARS_GRADATION": "8-15",
+      "ECO_MARK_LABEL": "Оптимизация",
+      "MAINOKVED_CODE": "46.49",
+      "MAINOKVED_NAME": "Торговля оптовая прочими бытовыми товарами",
+      "NEGATIVEMARK": "1.0",
+      "AMOUNT_WORKERS_FNS_GRADATION": "Более 251",
+      "AMOUNT_WORKERS_SPARK_GRADATION": "",
+      "CL_TYPE": "CLIENT",
+      "CL_PRODUCT_RKO_MARK": "1.0",
+      "CL_PRODUCT_GAR_MARK": "0.0",
+      "CL_PRODUCT_LOA_MARK": "1.0",
+      "CL_PRODUCT_LEA_MARK": "1.0",
+      "CL_PRODUCT_DEP_MARK": "0.0",
+      "CL_PRODUCT_ZPP_MARK": "1.0",
+      "FTS_FLAG": "1.0",
+      "FTS_COUNTRY_NAME": "КИТАЙ, ЕГИПЕТ, ТУРЦИЯ",
+      "FACTORING_MARK": "0.0",
+      "REVENUE_COMPANY": "24107304489.0",
+      "GROUP_ID": "group_133806_sb",
+      "CITY": "г. Москва",
+      "REGION": "Москва"
+    },
+    "field_evidence": {
+      "industry": {
+        "id": "U_1941:industry",
+        "field": "MAINOKVED_NAME",
+        "raw_value": "Торговля оптовая прочими бытовыми товарами",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "okved": {
+        "id": "U_1941:okved",
+        "field": "MAINOKVED_CODE",
+        "raw_value": "46.49",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "revenue_decimal": {
+        "id": "U_1941:revenue_decimal",
+        "field": "REVENUE_COMPANY",
+        "raw_value": "24107304489.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "region": {
+        "id": "U_1941:region",
+        "field": "REGION",
+        "raw_value": "Москва",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "city": {
+        "id": "U_1941:city",
+        "field": "CITY",
+        "raw_value": "г. Москва",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "group_id": {
+        "id": "U_1941:group_id",
+        "field": "GROUP_ID",
+        "raw_value": "group_133806_sb",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "countries": {
+        "id": "U_1941:countries",
+        "field": "FTS_COUNTRY_NAME",
+        "raw_value": "КИТАЙ, ЕГИПЕТ, ТУРЦИЯ",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "credit": {
+        "id": "U_1941:credit",
+        "field": "CL_PRODUCT_LOA_MARK",
+        "raw_value": "1.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "leasing": {
+        "id": "U_1941:leasing",
+        "field": "CL_PRODUCT_LEA_MARK",
+        "raw_value": "1.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "rko": {
+        "id": "U_1941:rko",
+        "field": "CL_PRODUCT_RKO_MARK",
+        "raw_value": "1.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "guarantee": {
+        "id": "U_1941:guarantee",
+        "field": "CL_PRODUCT_GAR_MARK",
+        "raw_value": "0.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "deposit": {
+        "id": "U_1941:deposit",
+        "field": "CL_PRODUCT_DEP_MARK",
+        "raw_value": "0.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "salary": {
+        "id": "U_1941:salary",
+        "field": "CL_PRODUCT_ZPP_MARK",
+        "raw_value": "1.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "factoring": {
+        "id": "U_1941:factoring",
+        "field": "FACTORING_MARK",
+        "raw_value": "0.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_1941",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      }
+    },
+    "unknowns": [
+      "Товарный состав поставок",
+      "Условия договоров",
+      "Доля затрат на сырьё",
+      "Маршруты"
+    ],
+    "stage1_report": {
+      "provenance": "stage1_report",
+      "label": "По отчёту первого этапа"
+    },
+    "payment_links": {
+      "payers": 504,
+      "beneficiaries": 110,
+      "source": "source_csv"
+    },
+    "version": "05403d34f2d73e4f"
+  },
+  {
+    "id": "U_9250",
+    "industry": "Строительство",
+    "okved": "42.99",
+    "okved_name": "Строительство прочих инженерных сооружений, не включенных в другие группировки",
+    "revenue_decimal": "62340483339.0",
+    "region": "Иркутская область",
+    "city": "г. Иркутск",
+    "group_id": "group_133188_sb",
+    "countries": [
+      "Китай"
+    ],
+    "products": {
+      "credit": true,
+      "leasing": true,
+      "rko": true,
+      "guarantee": true,
+      "deposit": false,
+      "salary": true,
+      "factoring": false
+    },
+    "provenance": "source_csv",
+    "imported_at": "2026-10-24T15:47:38.116394+00:00",
+    "source": "df_Uid_data_hack.csv",
+    "raw": {
+      "SYNTHETIC_U": "U_9250",
+      "ORG_TYPE": "КОММ_ОРГ",
+      "OKFS_NAME": "ЧАСТНАЯ СОБСТВЕННОСТЬ",
+      "COMPANY_AGE_YEARS_GRADATION": "16-25",
+      "ECO_MARK_LABEL": "Бизнес в новой реальности",
+      "MAINOKVED_CODE": "42.99",
+      "MAINOKVED_NAME": "Строительство прочих инженерных сооружений, не включенных в другие группировки",
+      "NEGATIVEMARK": "1.0",
+      "AMOUNT_WORKERS_FNS_GRADATION": "Более 251",
+      "AMOUNT_WORKERS_SPARK_GRADATION": "",
+      "CL_TYPE": "CLIENT",
+      "CL_PRODUCT_RKO_MARK": "1.0",
+      "CL_PRODUCT_GAR_MARK": "1.0",
+      "CL_PRODUCT_LOA_MARK": "1.0",
+      "CL_PRODUCT_LEA_MARK": "1.0",
+      "CL_PRODUCT_DEP_MARK": "0.0",
+      "CL_PRODUCT_ZPP_MARK": "1.0",
+      "FTS_FLAG": "1.0",
+      "FTS_COUNTRY_NAME": "КИТАЙ",
+      "FACTORING_MARK": "0.0",
+      "REVENUE_COMPANY": "62340483339.0",
+      "GROUP_ID": "group_133188_sb",
+      "CITY": "г. Иркутск",
+      "REGION": "Иркутская область"
+    },
+    "field_evidence": {
+      "industry": {
+        "id": "U_9250:industry",
+        "field": "MAINOKVED_NAME",
+        "raw_value": "Строительство прочих инженерных сооружений, не включенных в другие группировки",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "okved": {
+        "id": "U_9250:okved",
+        "field": "MAINOKVED_CODE",
+        "raw_value": "42.99",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "revenue_decimal": {
+        "id": "U_9250:revenue_decimal",
+        "field": "REVENUE_COMPANY",
+        "raw_value": "62340483339.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "region": {
+        "id": "U_9250:region",
+        "field": "REGION",
+        "raw_value": "Иркутская область",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "city": {
+        "id": "U_9250:city",
+        "field": "CITY",
+        "raw_value": "г. Иркутск",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "group_id": {
+        "id": "U_9250:group_id",
+        "field": "GROUP_ID",
+        "raw_value": "group_133188_sb",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "countries": {
+        "id": "U_9250:countries",
+        "field": "FTS_COUNTRY_NAME",
+        "raw_value": "КИТАЙ",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "credit": {
+        "id": "U_9250:credit",
+        "field": "CL_PRODUCT_LOA_MARK",
+        "raw_value": "1.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "leasing": {
+        "id": "U_9250:leasing",
+        "field": "CL_PRODUCT_LEA_MARK",
+        "raw_value": "1.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "rko": {
+        "id": "U_9250:rko",
+        "field": "CL_PRODUCT_RKO_MARK",
+        "raw_value": "1.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "guarantee": {
+        "id": "U_9250:guarantee",
+        "field": "CL_PRODUCT_GAR_MARK",
+        "raw_value": "1.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "deposit": {
+        "id": "U_9250:deposit",
+        "field": "CL_PRODUCT_DEP_MARK",
+        "raw_value": "0.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "salary": {
+        "id": "U_9250:salary",
+        "field": "CL_PRODUCT_ZPP_MARK",
+        "raw_value": "1.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "factoring": {
+        "id": "U_9250:factoring",
+        "field": "FACTORING_MARK",
+        "raw_value": "0.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_9250",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      }
+    },
+    "unknowns": [
+      "Товарный состав поставок",
+      "Условия договоров",
+      "Доля затрат на сырьё",
+      "Маршруты"
+    ],
+    "stage1_report": {
+      "provenance": "stage1_report",
+      "label": "По отчёту первого этапа"
+    },
+    "payment_links": {
+      "payers": 19,
+      "beneficiaries": 218,
+      "source": "source_csv"
+    },
+    "version": "cdae7947d6a329df"
+  },
+  {
+    "id": "U_106783",
+    "industry": "Электрооборудование",
+    "okved": "27.12",
+    "okved_name": "Производство электрической распределительной и регулирующей аппаратуры",
+    "revenue_decimal": "20828575458.0",
+    "region": "Москва",
+    "city": "г. Москва",
+    "group_id": "group_133161_sb",
+    "countries": [
+      "ОАЭ",
+      "Китай",
+      "Литва"
+    ],
+    "products": {
+      "credit": false,
+      "leasing": true,
+      "rko": false,
+      "guarantee": false,
+      "deposit": false,
+      "salary": true,
+      "factoring": false
+    },
+    "provenance": "source_csv",
+    "imported_at": "2026-10-24T15:47:38.116394+00:00",
+    "source": "df_Uid_data_hack.csv",
+    "raw": {
+      "SYNTHETIC_U": "U_106783",
+      "ORG_TYPE": "КОММ_ОРГ",
+      "OKFS_NAME": "СОБСТВЕННОСТЬ ИНОСТРАННЫХ ЮРИДИЧЕСКИХ ЛИЦ",
+      "COMPANY_AGE_YEARS_GRADATION": "8-15",
+      "ECO_MARK_LABEL": "Оптимизация",
+      "MAINOKVED_CODE": "27.12",
+      "MAINOKVED_NAME": "Производство электрической распределительной и регулирующей аппаратуры",
+      "NEGATIVEMARK": "1.0",
+      "AMOUNT_WORKERS_FNS_GRADATION": "Более 251",
+      "AMOUNT_WORKERS_SPARK_GRADATION": "",
+      "CL_TYPE": "CLIENT",
+      "CL_PRODUCT_RKO_MARK": "0.0",
+      "CL_PRODUCT_GAR_MARK": "0.0",
+      "CL_PRODUCT_LOA_MARK": "0.0",
+      "CL_PRODUCT_LEA_MARK": "1.0",
+      "CL_PRODUCT_DEP_MARK": "0.0",
+      "CL_PRODUCT_ZPP_MARK": "1.0",
+      "FTS_FLAG": "1.0",
+      "FTS_COUNTRY_NAME": "ОАЭ, КИТАЙ, ЛИТВА",
+      "FACTORING_MARK": "0.0",
+      "REVENUE_COMPANY": "20828575458.0",
+      "GROUP_ID": "group_133161_sb",
+      "CITY": "г. Москва",
+      "REGION": "Москва"
+    },
+    "field_evidence": {
+      "industry": {
+        "id": "U_106783:industry",
+        "field": "MAINOKVED_NAME",
+        "raw_value": "Производство электрической распределительной и регулирующей аппаратуры",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "okved": {
+        "id": "U_106783:okved",
+        "field": "MAINOKVED_CODE",
+        "raw_value": "27.12",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "revenue_decimal": {
+        "id": "U_106783:revenue_decimal",
+        "field": "REVENUE_COMPANY",
+        "raw_value": "20828575458.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "region": {
+        "id": "U_106783:region",
+        "field": "REGION",
+        "raw_value": "Москва",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "city": {
+        "id": "U_106783:city",
+        "field": "CITY",
+        "raw_value": "г. Москва",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "group_id": {
+        "id": "U_106783:group_id",
+        "field": "GROUP_ID",
+        "raw_value": "group_133161_sb",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "countries": {
+        "id": "U_106783:countries",
+        "field": "FTS_COUNTRY_NAME",
+        "raw_value": "ОАЭ, КИТАЙ, ЛИТВА",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "credit": {
+        "id": "U_106783:credit",
+        "field": "CL_PRODUCT_LOA_MARK",
+        "raw_value": "0.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "leasing": {
+        "id": "U_106783:leasing",
+        "field": "CL_PRODUCT_LEA_MARK",
+        "raw_value": "1.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "rko": {
+        "id": "U_106783:rko",
+        "field": "CL_PRODUCT_RKO_MARK",
+        "raw_value": "0.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "guarantee": {
+        "id": "U_106783:guarantee",
+        "field": "CL_PRODUCT_GAR_MARK",
+        "raw_value": "0.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "deposit": {
+        "id": "U_106783:deposit",
+        "field": "CL_PRODUCT_DEP_MARK",
+        "raw_value": "0.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "salary": {
+        "id": "U_106783:salary",
+        "field": "CL_PRODUCT_ZPP_MARK",
+        "raw_value": "1.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      },
+      "factoring": {
+        "id": "U_106783:factoring",
+        "field": "FACTORING_MARK",
+        "raw_value": "0.0",
+        "file": "df_Uid_data_hack.csv",
+        "row_key": "U_106783",
+        "imported_at": "2026-10-24T15:47:38.116394+00:00"
+      }
+    },
+    "unknowns": [
+      "Товарный состав поставок",
+      "Условия договоров",
+      "Доля затрат на сырьё",
+      "Маршруты"
+    ],
+    "stage1_report": {
+      "provenance": "stage1_report",
+      "label": "По отчёту первого этапа"
+    },
+    "payment_links": {
+      "payers": 633,
+      "beneficiaries": 190,
+      "source": "source_csv"
+    },
+    "version": "75ed68d0ee6e6576"
+  }
+]

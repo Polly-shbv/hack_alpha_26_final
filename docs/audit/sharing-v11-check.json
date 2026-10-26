@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-26",
+  "build": "1.1.0",
+  "status": "passed",
+  "bytes": 1172761,
+  "sha256": "601490fdff55204b2d72cda0a8e3993082dbb27e1a6e32d2a222b3dfad8e2b09",
+  "files": 62,
+  "archive_integrity": "passed",
+  "fresh_directory_startup": "passed",
+  "startup_used_existing_verified_python_dependencies": true,
+  "case_documents_loaded_without_local_original_PDF": 9,
+  "bank_quotes_in_three_overviews": 12,
+  "all_three_company_analyses_cost_rub": "0",
+  "live_without_credentials": "blocked",
+  "not_included": [
+    "source CSV",
+    "working database",
+    "history",
+    "keys",
+    ".env",
+    "heavy original reference PDFs"
+  ],
+  "not_run": [
+    "Windows/Linux runtime",
+    "repeat first-time pip installation for 1.1; dependency lock unchanged from verified launcher installation"
+  ]
+}

@@ -1,0 +1,10 @@
+import ts from 'typescript';
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {test} from 'node:test';
+const source=fs.readFileSync('frontend/src/api.ts','utf8');
+const compiled=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText;
+const {eventWord,flag,money,date}=await import('data:text/javascript;base64,'+Buffer.from(compiled).toString('base64'));
+for(const [n,word] of [[0,'событий'],[1,'событие'],[2,'события'],[11,'событий'],[14,'событий'],[21,'событие'],[112,'событий']])test('Русское склонение '+n,()=>assert.equal(eventWord(n),word));
+test('Неизвестный признак отдельно от false',()=>{assert.equal(flag(null),'Нет данных');assert.equal(flag(false),'Не отмечен')});
+test('Точная выручка и московский день',()=>{assert.match(money('62340483339'),/62,34/);assert.match(date('2026-10-22T22:00:00Z'),/23.10.2026/)});

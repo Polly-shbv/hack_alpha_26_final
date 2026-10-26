@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-26",
+  "provider": "google",
+  "model": "gemma-4-26b-a4b-it",
+  "connection_metadata_http": 200,
+  "minimal_generation_http": 200,
+  "batch": {
+    "id": "batch-16132eab487a42e3",
+    "owner": "demo",
+    "role": "ceo",
+    "mode": "live",
+    "status": "completed_with_limits",
+    "created_at": "2026-10-26T00:13:26.251867+00:00",
+    "ended_at": "2026-10-26T00:14:38.538112+00:00",
+    "idem": "google-v14-accepted-check-20261026",
+    "payload": {
+      "company_ids": [
+        "U_9250",
+        "U_1941",
+        "U_106783"
+      ],
+      "run_ids": {
+        "U_9250": "run-5985b99457454d2d",
+        "U_1941": "run-861e992bb3f5496d",
+        "U_106783": "run-b6abe257a8444cab"
+      },
+      "as_of": "2026-10-26T00:13:26.201845+00:00",
+      "step": "Готово",
+      "model_calls": 1,
+      "max_model_calls": 1,
+      "role": "ceo",
+      "errors": [
+        {
+          "company_id": "U_9250",
+          "event_id": "event-doc-321629c278704924",
+          "code": "UNVERIFIED_BANK",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        },
+        {
+          "company_id": "U_1941",
+          "event_id": "event-doc-11947f1df56e4970",
+          "code": "UNVERIFIED_BANK",
+          "message": "Ответ по паре не прошёл проверку; применены локальные правила"
+        }
+      ],
+      "news_count": 3,
+      "task_count": 6,
+      "uncached_tasks": 6,
+      "company_count": 3,
+      "cache_hits": 0,
+      "tokens_in": 7520,
+      "tokens_out": 3355,
+      "cost_rub": "0",
+      "elapsed_ms": 72283
+    }
+  },
+  "observations": [
+    {
+      "http_status": 200,
+      "error_status": null,
+      "message": "",
+      "details": [],
+      "usage": {
+        "promptTokenCount": 7520,
+        "candidatesTokenCount": 3355,
+        "totalTokenCount": 10875,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 7520
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    }
+  ],
+  "methods": [
+    {
+      "company_id": "U_9250",
+      "event_id": "event-doc-3cb911d48f804d2d",
+      "method": "Gemma 4 · пакетный запрос"
+    },
+    {
+      "company_id": "U_9250",
+      "event_id": "event-doc-321629c278704924",
+      "method": "Локальные правила"
+    },
+    {
+      "company_id": "U_9250",
+      "event_id": "event-doc-11947f1df56e4970",
+      "method": "Gemma 4 · пакетный запрос"
+    },
+    {
+      "company_id": "U_1941",
+      "event_id": "event-doc-11947f1df56e4970",
+      "method": "Локальные правила"
+    },
+    {
+      "company_id": "U_106783",
+      "event_id": "event-doc-321629c278704924",
+      "method": "Gemma 4 · пакетный запрос"
+    },
+    {
+      "company_id": "U_106783",
+      "event_id": "event-doc-11947f1df56e4970",
+      "method": "Gemma 4 · пакетный запрос"
+    }
+  ]
+}

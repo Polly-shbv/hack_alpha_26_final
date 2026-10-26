@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-26",
+  "status": "passed",
+  "docker_desktop": "4.96.3",
+  "engine": "29.9.2",
+  "platform": "linux/arm64",
+  "image_id": "sha256:e8886ab4c3e7bc329e84ff60803fb3b14ad2e9bb5d377c299a4eafccbbc177c0",
+  "backend_tests_passed": 149,
+  "container_health": true,
+  "three_profiles": true,
+  "fixture_pipeline": true,
+  "history_survives_restart": true,
+  "manual_only": true,
+  "image_runs_as_nonroot": true,
+  "no_bundled_env_or_key": true,
+  "smoke_port": 8002,
+  "isolated_compose_project": "alfa-context-v14-check",
+  "real_llm_calls": 0
+}

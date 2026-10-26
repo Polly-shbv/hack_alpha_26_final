@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-26",
+  "status": "passed",
+  "build": "1.2.0",
+  "bytes": 1422608,
+  "sha256": "035029fc00448277d2dea190979b4310b022e51e7972e0f53009a97e93769608",
+  "files": 74,
+  "fresh_directory_startup": "passed",
+  "source_sha256": "1c976067467e5725aacdf3b50ae461ae8879bb46aaf0cdb7e2ff5260f91d3488",
+  "three_company_local_analyses": "passed",
+  "live_without_credentials": "blocked",
+  "actual_api_key_in_package": false,
+  "default_collection_enabled": false,
+  "default_external_context_permission": false,
+  "not_run": [
+    "Windows/Linux",
+    "repeat fresh pip installation (same dependency lock)"
+  ]
+}

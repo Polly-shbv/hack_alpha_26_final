@@ -1,0 +1,55 @@
+name: Verify local demo
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    env:
+      ALFA_COLLECTION_WORKER: '0'
+      ALFA_DB: /tmp/alfa-ci.sqlite3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
+          cache: pnpm
+      - run: python -m venv .venv && .venv/bin/python -m pip install -r requirements.lock.txt
+      - run: pnpm install --frozen-lockfile
+      - run: .venv/bin/python -m pytest backend/tests -q
+      - run: node scripts/frontend-unit.mjs
+      - run: pnpm exec tsc --noEmit && pnpm exec vite build
+      - run: pnpm exec playwright install --with-deps chromium
+      - name: Run browser functional and accessibility checks
+        shell: bash
+        run: |
+          .venv/bin/python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 > /tmp/alfa-api.log 2>&1 &
+          pnpm exec vite --host 127.0.0.1 > /tmp/alfa-ui.log 2>&1 &
+          for attempt in $(seq 1 60); do if curl -fsS http://127.0.0.1:5173/ > /dev/null && curl -fsS http://127.0.0.1:8000/api/v1/health > /dev/null; then break; fi; sleep 1; done
+          pnpm exec playwright test --grep-invert 'Принятая baseline'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-report
+          path: |
+            playwright-report/
+            test-results/
+            docs/audit/axe-results.json
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose up -d --build
+      - name: Verify container and persistent history
+        shell: bash
+        run: python3 scripts/check-container.py
+      - run: docker compose logs
+        if: failure()
+      - run: docker compose down
+        if: always()

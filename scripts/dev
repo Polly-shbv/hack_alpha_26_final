@@ -1,0 +1,18 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+TASK_PROJECT_DIR="$PWD"
+. scripts/env.sh
+if [ -f .runtime-dir ]; then
+  IFS= read -r TASK_CACHE_DIR < .runtime-dir
+  if [ -d "$TASK_CACHE_DIR/.venv" ] && [ -d "$TASK_CACHE_DIR/node_modules" ]; then cd "$TASK_CACHE_DIR"; fi
+fi
+export ALFA_DB="${ALFA_DB:-$TASK_PROJECT_DIR/data/local/alfa.sqlite3}"
+if [ -f "$TASK_PROJECT_DIR/.env" ]; then
+  .venv/bin/python -m dotenv -f "$TASK_PROJECT_DIR/.env" run -- .venv/bin/python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 &
+else
+  .venv/bin/python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 &
+fi
+TASK_API_PID=$!
+trap 'kill "$TASK_API_PID" 2>/dev/null || true' EXIT INT TERM
+node node_modules/vite/bin/vite.js --host 127.0.0.1 --port 5173

@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+. scripts/env.sh
+TASK_SOURCE_DIR="$PWD"
+TASK_BUILD_DIR="$(.venv/bin/python scripts/prepare-build.py)"
+cd "$TASK_BUILD_DIR"
+pnpm install --offline --frozen-lockfile --reporter=silent
+node node_modules/typescript/bin/tsc --noEmit
+node node_modules/vite/bin/vite.js build
+cd "$TASK_SOURCE_DIR"
+.venv/bin/python scripts/prepare-build.py output

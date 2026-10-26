@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+. scripts/env.sh
+TASK_PYTHON="${PYTHON:-python3}"
+TASK_BUNDLED="/Users/polinasibaeva/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3"
+if [ -x "$TASK_BUNDLED" ]; then TASK_PYTHON="$TASK_BUNDLED"; fi
+[ -d .venv ] || "$TASK_PYTHON" -m venv .venv
+.venv/bin/python -m pip install -r requirements.lock.txt
+pnpm install --frozen-lockfile
+.venv/bin/python -m backend.app.cli seed

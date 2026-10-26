@@ -1,0 +1,13 @@
+{
+  "dataset": {
+    "profiles": 3,
+    "events": 30,
+    "test_bank_pdfs": 9
+  },
+  "cached_list_samples": 40,
+  "cached_list_p95_ms": 11.46,
+  "test_environment": "FastAPI TestClient, SQLite temp DB, no LLM",
+  "limits": {
+    "cached_api_p95_ms": 500
+  }
+}

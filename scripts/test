@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+. scripts/env.sh
+.venv/bin/python -m pytest backend/tests -q
+node scripts/frontend-unit.mjs

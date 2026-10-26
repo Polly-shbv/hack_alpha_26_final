@@ -1,0 +1,344 @@
+[
+  {
+    "event_id": "fixture-rate-001",
+    "company_id": "U_9250",
+    "expected_links": [
+      "credit"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-rate-001",
+    "company_id": "U_1941",
+    "expected_links": [
+      "credit"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-rate-001",
+    "company_id": "U_106783",
+    "expected_links": [
+      "leasing"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-china-001",
+    "company_id": "U_9250",
+    "expected_links": [
+      "countries"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-china-001",
+    "company_id": "U_1941",
+    "expected_links": [
+      "countries"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-china-001",
+    "company_id": "U_106783",
+    "expected_links": [
+      "countries"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-copper-001",
+    "company_id": "U_9250",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-copper-001",
+    "company_id": "U_1941",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-copper-001",
+    "company_id": "U_106783",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-gold-001",
+    "company_id": "U_9250",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-gold-001",
+    "company_id": "U_1941",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-gold-001",
+    "company_id": "U_106783",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-conflict-001",
+    "company_id": "U_9250",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-conflict-001",
+    "company_id": "U_1941",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-conflict-001",
+    "company_id": "U_106783",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-no-bank-001",
+    "company_id": "U_9250",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-no-bank-001",
+    "company_id": "U_1941",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  },
+  {
+    "event_id": "fixture-no-bank-001",
+    "company_id": "U_106783",
+    "expected_links": [
+      "industry"
+    ],
+    "prohibited_claims": [
+      "нет долга",
+      "доля рынка",
+      "https://invented",
+      "позиция банка подтверждена"
+    ],
+    "expected_unknowns": [
+      "Условия договоров"
+    ],
+    "cutoff": "2026-10-23T12:00:00+00:00",
+    "bank_view": "not_found",
+    "is_synthetic": true
+  }
+]

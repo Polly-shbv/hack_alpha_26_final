@@ -1,0 +1,199 @@
+{
+  "date": "2026-10-26",
+  "interpretation": "local_rules",
+  "external_company_context_sent": false,
+  "collection": {
+    "id": "collect-22c901f766d54642",
+    "status": "partial",
+    "started_at": "2026-10-25T22:25:30.381770+00:00",
+    "ended_at": "2026-10-25T22:25:36.358536+00:00",
+    "payload": {
+      "trigger": "manual",
+      "owner": "demo",
+      "sources": [
+        {
+          "id": "lenta",
+          "name": "Лента.ру",
+          "found": 99,
+          "processed": 5,
+          "changed": 5,
+          "status": "completed",
+          "items": [
+            {
+              "url": "https://lenta.ru/news/2026/10/26/v-rossii-startovala-monetnaya-nedelya/",
+              "id": "doc-bde0cd4a59574d7c",
+              "status": "new",
+              "version": 1,
+              "content_extent": "full_article"
+            },
+            {
+              "url": "https://lenta.ru/news/2026/10/25/rossiyanam-rasskazali-ob-oformlenii-zemli-za-predelami-uchastka/",
+              "id": "doc-682a5cca3c94484d",
+              "status": "new",
+              "version": 1,
+              "content_extent": "full_article"
+            },
+            {
+              "url": "https://lenta.ru/news/2026/10/25/rossiyanam-rasskazali-o-poluchenii-medpomoschi-bez-registratsii/",
+              "id": "doc-4018bc5e571b4eff",
+              "status": "new",
+              "version": 1,
+              "content_extent": "full_article"
+            },
+            {
+              "url": "https://lenta.ru/news/2026/10/25/diesel-is-good/",
+              "id": "doc-8b4fc149df16460b",
+              "status": "new",
+              "version": 1,
+              "content_extent": "full_article"
+            },
+            {
+              "url": "https://lenta.ru/news/2026/10/26/zaharova-poblagodarila-kitay-za-berezhnoe-otnoshenie-k-mogilam-voinov/",
+              "id": "doc-84af3cf9734c4717",
+              "status": "new",
+              "version": 1,
+              "content_extent": "full_article"
+            }
+          ],
+          "elapsed_ms": 1764
+        },
+        {
+          "id": "ria",
+          "name": "РИА Новости",
+          "found": 100,
+          "processed": 5,
+          "changed": 5,
+          "status": "completed",
+          "items": [
+            {
+              "url": "https://ria.ru/20261025/rossiya-2126947376.html",
+              "id": "doc-75ee238d99ad4fd9",
+              "status": "new",
+              "version": 1,
+              "content_extent": "full_article"
+            },
+            {
+              "url": "https://ria.ru/20261025/es-2126941947.html",
+              "id": "doc-3dd979b6d5634ee9",
+              "status": "new",
+              "version": 1,
+              "content_extent": "full_article"
+            },
+            {
+              "url": "https://ria.ru/20261026/bolgariya-2126952291.html",
+              "id": "doc-f368944984844cc1",
+              "status": "new",
+              "version": 1,
+              "content_extent": "full_article"
+            },
+            {
+              "url": "https://ria.ru/20261026/barselona-real-2126951888.html",
+              "id": "doc-2cdc6de82430476e",
+              "status": "new",
+              "version": 1,
+              "content_extent": "full_article"
+            },
+            {
+              "url": "https://ria.ru/20261026/mid-2126952131.html",
+              "id": "doc-5e0cf225ed524934",
+              "status": "new",
+              "version": 1,
+              "content_extent": "full_article"
+            }
+          ],
+          "elapsed_ms": 2837
+        },
+        {
+          "id": "tass",
+          "name": "ТАСС",
+          "found": 100,
+          "processed": 5,
+          "changed": 5,
+          "status": "partial",
+          "items": [
+            {
+              "url": "https://tass.ru/nedvizhimost/28252105",
+              "id": "doc-f3bf663c562d4ac6",
+              "status": "new",
+              "version": 1,
+              "content_extent": "feed_excerpt"
+            },
+            {
+              "url": "https://tass.ru/ekonomika/28252087",
+              "id": "doc-7acce4e3419a4969",
+              "status": "new",
+              "version": 1,
+              "content_extent": "feed_excerpt"
+            },
+            {
+              "url": "https://tass.ru/ekonomika/28252075",
+              "id": "doc-df250bef86a14bb1",
+              "status": "new",
+              "version": 1,
+              "content_extent": "feed_excerpt"
+            },
+            {
+              "url": "https://tass.ru/ekonomika/28252065",
+              "id": "doc-6e8b2850bb9e44da",
+              "status": "new",
+              "version": 1,
+              "content_extent": "feed_excerpt"
+            },
+            {
+              "url": "https://tass.ru/ekonomika/28252039",
+              "id": "doc-770527e457114784",
+              "status": "new",
+              "version": 1,
+              "content_extent": "feed_excerpt"
+            }
+          ],
+          "elapsed_ms": 1110
+        }
+      ],
+      "changed": 24,
+      "mode": "fixture"
+    }
+  },
+  "runs": [
+    {
+      "company_id": "U_9250",
+      "status": "completed_with_limits",
+      "events": 7,
+      "cost_rub": "0",
+      "methods": [
+        "Локальные правила"
+      ],
+      "source_publishers": [
+        "РИА Новости",
+        "Лента.ру",
+        "ТАСС"
+      ]
+    },
+    {
+      "company_id": "U_1941",
+      "status": "completed_with_limits",
+      "events": 4,
+      "cost_rub": "0",
+      "methods": [
+        "Локальные правила"
+      ],
+      "source_publishers": [
+        "РИА Новости",
+        "Лента.ру"
+      ]
+    },
+    {
+      "company_id": "U_106783",
+      "status": "completed_with_limits",
+      "events": 5,
+      "cost_rub": "0",
+      "methods": [
+        "Локальные правила"
+      ],
+      "source_publishers": [
+        "РИА Новости",
+        "Лента.ру"
+      ]
+    }
+  ]
+}

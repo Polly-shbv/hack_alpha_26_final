@@ -1,0 +1,13 @@
+{
+  "version": "1.4.0",
+  "profiles_unchanged": true,
+  "manual_only": true,
+  "external_context_consent": true,
+  "mode": "live",
+  "recorded_model_requests": 7,
+  "provider": "google",
+  "key_in_local_env_only": true,
+  "env_permissions": "0o600",
+  "visible_model_names": 0,
+  "working_site": "http://127.0.0.1:5173"
+}

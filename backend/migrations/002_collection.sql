@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS subscriptions(id TEXT PRIMARY KEY,payload TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS collected_articles(url TEXT NOT NULL,mode TEXT NOT NULL,document_id TEXT NOT NULL REFERENCES sources(id),version INTEGER NOT NULL,content_sha TEXT NOT NULL,last_checked TEXT NOT NULL,payload TEXT NOT NULL,PRIMARY KEY(url,mode));
+CREATE TABLE IF NOT EXISTS article_versions(url TEXT NOT NULL,mode TEXT NOT NULL,version INTEGER NOT NULL,document_id TEXT NOT NULL REFERENCES sources(id),created_at TEXT NOT NULL,PRIMARY KEY(url,mode,version));
+CREATE TABLE IF NOT EXISTS collection_cycles(id TEXT PRIMARY KEY,status TEXT NOT NULL,started_at TEXT NOT NULL,ended_at TEXT,payload TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS collection_state(id TEXT PRIMARY KEY,payload TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS analysis_targets(company_id TEXT NOT NULL,role TEXT NOT NULL,owner TEXT NOT NULL,payload TEXT NOT NULL,PRIMARY KEY(company_id,role,owner));
+CREATE TABLE IF NOT EXISTS interpretation_cache(cache_key TEXT PRIMARY KEY,payload TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS model_requests(id TEXT PRIMARY KEY,created_at TEXT NOT NULL,date_msk TEXT NOT NULL,status TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS bank_watches(id TEXT PRIMARY KEY,payload TEXT NOT NULL);
+INSERT OR IGNORE INTO schema_migrations VALUES(2);

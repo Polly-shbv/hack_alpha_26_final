@@ -1,0 +1,16 @@
+{
+  "version": "1.4.0",
+  "backend_passed": 149,
+  "frontend_unit_passed": 9,
+  "browser_passed": 21,
+  "typescript": "passed",
+  "build": "passed",
+  "manual_only": true,
+  "google_model": "gemma-4-26b-a4b-it",
+  "google_live_report": "google-live-check.json",
+  "docker_runtime": "passed_linux_arm64",
+  "github_ci": "not_run_no_remote",
+  "quality_review": "../quality-pilot.md",
+  "public_model_names": "hidden",
+  "tautological_profile_copy": "replaced"
+}

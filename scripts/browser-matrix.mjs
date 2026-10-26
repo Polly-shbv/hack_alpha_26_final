@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url);
+const runtime='/Users/polinasibaeva/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
+const {chromium}=require(runtime+'/playwright');
+const browser=await chromium.launch({headless:true,executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE||'/Users/polinasibaeva/Library/Caches/ms-playwright/chromium-1234/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing'});
+const page=await browser.newPage({viewport:{width:1440,height:900}});const result=[];const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:5173/select-company');await page.locator('.company-card').first().waitFor();
+const me=await (await page.request.get('http://127.0.0.1:5173/api/v1/me')).json();
+const run=await (await page.request.post('http://127.0.0.1:5173/api/v1/companies/U_9250/runs',{headers:{'X-CSRF-Token':me.csrf_token},data:{role:'ceo'}})).json();
+for(let n=0;n<100;n++){const r=await(await page.request.get('http://127.0.0.1:5173/api/v1/runs/'+run.run_id)).json();if(r.status.startsWith('completed'))break;await new Promise(r=>setTimeout(r,50))}
+const overview=await(await page.request.get('http://127.0.0.1:5173/api/v1/companies/U_9250/overview')).json();
+const routes=[['S01','/select-company'],['S02','/companies/U_9250/overview'],['S03','/companies/U_9250/news'],['S04',`/companies/U_9250/insights/${overview.items[0].id}`],['S05','/companies/U_9250/profile'],['S06','/sources'],['S07','/sources/import?tab=text'],['S11','/events/fixture-rate-001/compare'],['S12','/settings'],['map','/context/map?companyId=U_9250']];
+const axeRequire=createRequire(require.resolve('@axe-core/playwright'));const axe=fs.readFileSync(axeRequire.resolve('axe-core/axe.min.js'),'utf8');fs.mkdirSync('docs/screenshots',{recursive:true});
+for(const width of [1600,1440,1280,768,390,320]){await page.setViewportSize({width,height:width===1600?1000:width===768?1024:width===390?844:width===320?720:900});for(const [name,route] of routes){const before=performance.now();await page.goto('http://127.0.0.1:5173'+route);await page.locator('h1').waitFor();await page.locator('.skeleton').waitFor({state:'detached'});const interactive=Math.round(performance.now()-before);const overflow=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:innerWidth}));if(overflow.scroll>width)throw Error(`${name} overflow at ${width}`);let violations=[];if([1440,390].includes(width)){await page.evaluate(axe);const scan=await page.evaluate(async()=>await window.axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa']}}));violations=scan.violations.filter(v=>['serious','critical'].includes(v.impact)).map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))}if(width!==320)await page.screenshot({path:`docs/screenshots/${name}-${width}.png`,fullPage:true});result.push({name,width,interactive_ms:interactive,overflow:false,violations});fs.writeFileSync('docs/audit/visual-results.json',JSON.stringify({result,errors},null,2));console.log(name,width,violations.length?'FAIL axe '+JSON.stringify(violations):'PASS');}}
+await browser.close();if(result.some(r=>r.violations.length)||errors.length)process.exitCode=1;

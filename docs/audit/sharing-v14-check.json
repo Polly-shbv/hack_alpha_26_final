@@ -1,0 +1,14 @@
+{
+  "version": "1.4.0",
+  "reviewer_zip": {
+    "bytes": 1225364,
+    "sha256": "3451128de506701c6b76fae02f9379bc43d1abc8337b70e7d81bc8e64a7c65d4"
+  },
+  "checksums": "passed",
+  "secret_scan": "passed",
+  "fresh_extract_runtime": "passed_macOS_final",
+  "three_fixture_seven_step_runs": "passed_0_RUB",
+  "live_without_key": "blocked_409",
+  "windows_linux": "not_run",
+  "fresh_pip_install": "not_repeated_unchanged_lock"
+}
